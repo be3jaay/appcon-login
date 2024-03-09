@@ -28,7 +28,7 @@ const LoginForm = () => {
           <input className="fill" type="text" id="email" required="" placeholder="hello@example.com" />
           <div className="password-div">
             <h2>Password</h2>
-            <a href="#">Forgot Password</a>
+            <a href="/OTP">Forgot Password</a>
           </div>
           <div className="password-input">
             <input

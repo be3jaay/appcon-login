@@ -11,7 +11,7 @@ const LoginForm = () => {
         </div>
         <div className="otp-header">
               <SlArrowLeft />
-              <h1>Change Number</h1>
+              <h1> <a href="/LoginForm">Previous</a></h1>
           </div>
       <div className="otp-container">
         <div className="otp-info">
