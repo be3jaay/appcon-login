@@ -16,7 +16,7 @@ const LoginForm = () => {
       <div className="otp-container">
         <div className="otp-info">
           <h1>Enter authentication code</h1>
-          <p>Enter the 4-digit that we have sent via the phone number +63 956 6674 853</p>
+          <p>Enter the 4-digit that we have sent via the phone number <br /> +63 956 6674 853</p>
         </div>
         <div className="otp-input">
         <input

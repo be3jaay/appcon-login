@@ -23,7 +23,7 @@ const LoginForm = () => {
         </div>
         
 
-        <form action="">
+        <form action="" className='reg-form'>
         <div className="register-text">
             <h1 className='new-account-text'>New <br />Account</h1>
         </div>
@@ -37,14 +37,14 @@ const LoginForm = () => {
             type="text"
             id="email"
             required=""
-            placeholder="hello@example.com"
+            placeholder="Juan"
           />
           <input
             className="fill"
             type="text"
             id="email"
             required=""
-            placeholder="hello@example.com"
+            placeholder="Dela Cruz"
           />
             </div>
  
@@ -59,7 +59,6 @@ const LoginForm = () => {
           />
           <div className="password-div">
             <h2>Create Password</h2>
-            <a href="#">Forgot Password</a>
           </div>
           <div className="password-input">
             <input
@@ -98,7 +97,7 @@ const LoginForm = () => {
           </div>
           <button className="button-submit"type="submit">Sign Up</button>
           <p>
-            Already have an account? <a href="#">Sign in here</a>
+            Already have an account? <a href="/LoginForm">Sign in here</a>
           </p>
         </form>
       </div>

@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Poppins;
 }
 body{
     background-image: url(/public/bg.png);
@@ -19,7 +20,7 @@ body{
 .header-container h1{
     color: #FFF;
     text-align: center;
-    font-family: Poppins;
+    
     font-size: 2.688rem;
     font-weight: 800;
     line-height: normal;
@@ -28,7 +29,6 @@ body{
 .header-container p{
     color: #FFF;
     text-align: center;
-    font-family: Poppins;
     font-size: 0.5rem;
     font-style: normal;
     font-weight: 300;
@@ -40,7 +40,6 @@ form h2{
     color: #FFF;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-family: Poppins;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -104,7 +103,6 @@ input{
 }    
 .checkbox p{
     color: #FFF;
-    font-family: Poppins;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -151,7 +149,6 @@ form a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-overflow: ellipsis;
-    font-family: Poppins;
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
@@ -256,7 +253,10 @@ img {
 .name-form, .name-header{
   display:flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+.name-header h2{
+  margin-right: auto;
 }
 .register-text h2{
   display: flex;
@@ -266,7 +266,6 @@ img {
 form .register-text {
   color: #FFF;
   text-align: start;
-  font-family: Poppins;
   font-size: 30px;
   font-style: normal;
   font-weight: 800;
@@ -316,7 +315,7 @@ svg {
   text-align: center;
 }
 .otp-info h1{
-font-size: 24px;
+font-size: 1.75rem;
 font-weight: 700;
 line-height: 32px;
 margin-bottom: 5px;
@@ -387,6 +386,7 @@ margin-bottom: 5px;
   margin-top: 20px;
   cursor: pointer;
 }
+
 /*Keyframes for the animations*/
   @keyframes pulse {
     100% {
@@ -509,7 +509,7 @@ margin-bottom: 5px;
         height: auto;
         position: absolute;
         top: 20%;
-        left: calc(40% + -200px); /* Adjust the position relative to the logo */
+        left: calc(40% + -200px);
         transform: translateY(-50%);
       }
       .password-input {
@@ -518,7 +518,7 @@ margin-bottom: 5px;
       
       .eye-icon {
         position: absolute;
-        right: 10px; /* Adjust position as needed */
+        right: 10px; 
         top: 50%;
         transform: translateY(-50%);
         cursor: pointer;
@@ -532,6 +532,88 @@ margin-bottom: 5px;
     input {
       color: #fff;
     }
-     
+    .new-account-text{
+      padding: 0;
+    }
+    .reg-form {
+      width: 485px;
+      height: 800px;
+      padding: 0px 20px;
+      margin-top: 10px;
+    }
+    .otp-header{
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0px 50px;
+      margin-left: 200px;
+    }
+    .otp-header svg{
+      margin-right: 5px;
+    }
+    .register-pulse{
+      display: flex;
+    }
+    .otp-pulse {
+      width: 250px;
+      height: 250px;
+      background: linear-gradient(#00E0FF, #029);
+      position: absolute;
+      top: 800%;
+      left: 50%; 
+      transform: translate(-50%, -30%); 
+      border-radius: 50%;
+      z-index: -1;
+      opacity: 0.1;
+  }
+  .register-pulse{
+      width: 250px;
+      height: 250px;
+      background: linear-gradient(#00E0FF, #029);
+      position: absolute;
+      top: 30%;
+      left: 50%; 
+      transform: translate(-50%, -40%); 
+      border-radius: 50%;
+      z-index: -1;
+      opacity: 0.07;
+  }
+  .otp-pulse:before,
+  .otp-pulse:after {
+      content: "";
+      position: absolute;
+      left: -45px;
+      top: -20%;
+      width: 130%;
+      height: 130%;
+      background-color: #00E0FF;
+      border-radius: 50%;
+      z-index: -1;
+      opacity: 0.7;
+  }
+  
+  
+  .register-pulse:before,
+  .register-pulse:after {
+      content: "";
+      position: absolute;
+      left: -45px;
+      top: -20%;
+      width: 140%;
+      height: 140%;
+      background-color: #00E0FF;
+      border-radius: 50%;
+      z-index: -1;
+      opacity: 0.7;
+  }
+  
+  .register-pulse:before {
+      animation: pulse 2s ease-out infinite;
+  }
+  
+  .register-pulse:after {
+      animation: pulse 2s 1s ease-out infinite;
+  }
 }
 
