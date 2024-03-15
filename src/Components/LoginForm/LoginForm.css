@@ -333,7 +333,25 @@ margin-bottom: 5px;
   margin-top: 20px;
   margin-bottom: 100px;
   gap: 16px;
+  position: relative;
 }
+.otp-input .mobile-tel{
+  padding: 15px 40px;
+  width: calc(100% - -80px); 
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.20);
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  height: 100%;
+  
+}
+.otp-input svg {
+  position: absolute;
+  top: 50%;
+  right: 105%; 
+  transform: translateY(-50%);
+}
+
 .otp-num{
   color: #030303;
   text-align: center;
@@ -367,6 +385,11 @@ margin-bottom: 5px;
   color: #fff;
   cursor: pointer;
 }
+.otp-button button a{
+  color: white;
+  text-decoration: none;
+}
+
 .otp-button button:hover{
   box-shadow: 5px 5px 35px #029, 0 0 20px #00e0ff, 0 0 30px #029; 
   background-size: 300% 100%;
@@ -614,6 +637,10 @@ margin-bottom: 5px;
   
   .register-pulse:after {
       animation: pulse 2s 1s ease-out infinite;
+  }
+
+  .otp-button  a{
+    font-size: 16px;
   }
 }
 

@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './LoginForm.css';
 import logo from '../../img/g39.png';
 import { IoEyeSharp } from 'react-icons/io5';
 
@@ -28,7 +26,7 @@ const LoginForm = () => {
           <input className="fill" type="text" id="email" required="" placeholder="hello@example.com" />
           <div className="password-div">
             <h2>Password</h2>
-            <a href="/OTP">Forgot Password</a>
+            <a href="/OTPVerification">Forgot Password</a>
           </div>
           <div className="password-input">
             <input
