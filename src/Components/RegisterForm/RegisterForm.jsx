@@ -79,7 +79,7 @@ const LoginForm = () => {
               type={showPassword ? 'text' : 'password'}
               id="password"
               required=""
-              placeholder="Password"
+              placeholder="Confirm Password"
             />
             <IoEyeSharp className="eye-icon" onClick={togglePasswordVisibility} />
           </div>

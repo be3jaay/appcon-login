@@ -23,7 +23,7 @@ const LoginForm = () => {
         </div>
         <form action="">
           <h2>Username</h2>
-          <input className="fill" type="text" id="email" required="" placeholder="hello@example.com" />
+          <input className="fill" type="email" id="email" required="" placeholder="hello@example.com" />
           <div className="password-div">
             <h2>Password</h2>
             <a href="/OTPVerification">Forgot Password</a>
